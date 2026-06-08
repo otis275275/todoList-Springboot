@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-checkbox {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #bbcac8; /* outline-variant */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.custom-checkbox:checked {
+    background-color: #006a66; /* primary */
+    border-color: #006a66; /* primary */
+}
+.custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    margin-top: -2px;
+}
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #3c4948; /* on-surface-variant */
+}
+.task-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.task-card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -4px rgba(31, 16, 142, 0.1);
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
