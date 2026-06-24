@@ -13,7 +13,7 @@ import java.util.Date;
 
 // Dòng này báo cho Spring biết: Đây là trạm hứng lỗi toàn cục!
 @RestControllerAdvice 
-public class GlobalExceptionHandler {
+public class  GlobalExceptionHandler {
 
     @ExceptionHandler(UsernameAlreadyExistsException.class)
     public ResponseEntity<ErrorResponse> handleUsernameAlreadyExists(UsernameAlreadyExistsException ex, WebRequest request) {
