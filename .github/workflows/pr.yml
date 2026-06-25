@@ -36,8 +36,6 @@ jobs:
 
 
 
-          
-
       - name: Build Backend (skip tests)
         run: mvn clean package -DskipTests
         working-directory: ./be
