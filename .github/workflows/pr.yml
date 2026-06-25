@@ -5,21 +5,11 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  # 1. Job Lint (Job 1 trong 3 job thêm)
-  lint-code:
-    name: Code Linting
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Linting Placeholder
-        run: echo "Chạy các tool kiểm tra format code (vd. ESLint, Checkstyle) tại đây..."
 
   # 2. Job Build (đã tách riêng)
   build:
     name: Build Application
     runs-on: ubuntu-latest
-    needs: lint-code
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
