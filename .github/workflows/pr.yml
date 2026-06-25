@@ -32,6 +32,8 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
+          
+
       - name: Build Backend (skip tests)
         run: mvn clean package -DskipTests
         working-directory: ./be
