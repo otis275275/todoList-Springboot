@@ -11,4 +11,3 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
     List<Todo> findByUserId(Long userId);
 }
 
-
