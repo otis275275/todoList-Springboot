@@ -31,11 +31,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
-
-
-
-
-
       - name: Build Backend (skip tests)
         run: mvn clean package -DskipTests
         working-directory: ./be
@@ -55,6 +50,8 @@ jobs:
       - name: Build Frontend
         run: npm run build
         working-directory: ./fe
+
+
 
   # 3. Job Test (đã tách riêng)
   test:
