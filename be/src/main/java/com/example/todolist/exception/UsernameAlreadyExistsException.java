@@ -9,3 +9,4 @@ public class UsernameAlreadyExistsException extends RuntimeException {
         super(message);
     }
 }
+// Hello test CI
