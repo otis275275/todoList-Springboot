@@ -7,6 +7,9 @@ import Header from './components/Header';
 import BottomNav from './components/BottomNav';
 import SideNav from './components/SideNav';
 
+
+
+
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
   const [todos, setTodos] = useState([]);
