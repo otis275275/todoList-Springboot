@@ -14,7 +14,7 @@
 
 ### Build Result
 ```
-[INFO] BUILD SUCCESS
+[INFO] BUILD SUCCESS!!
 ```
 
 ---
